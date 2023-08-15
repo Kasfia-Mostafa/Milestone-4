@@ -10,17 +10,15 @@ function sortMaker(arr){
     return "Equal";
   }
   else if(arr[0] > arr[1]){
-
-    [arr[0],arr[1]] = [arr[1],arr[0]];
-    return [arr[0],arr[1]];
-     
+    
+    return arr;
   }
   else{
-    return arr;
+    return [arr[1],arr[0]]; 
   }
 }
 
-let array = [-4,3];
+let array = [2,3];
 let arrayCall = sortMaker(array);
 console.log(arrayCall);
 // done
